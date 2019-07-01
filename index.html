@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>MTG Sandbox</title>
+    <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
   </head>
@@ -12,15 +13,33 @@
         <textarea class='decklistDown' id="decklistDown" name="decklistDown" rows="20" cols="40"></textarea>
         <button type="button" id='submitDecklistDown' name="submitDecklistDown">Submit</button>
       </div>
-      <div class='player_area' id='player_area_2'>
-        <div class="main_area" id="mainarea_2"></div>
-        <div id="hand_2"></div>
-        <div class="library_box_2">
-          <img src="img/cardback.jpg" alt="Library" id='library_2'>
+
+      <div class="grid_container">
+        <div class='player_area_1' id='player_area_1'>
+          <div class="status_box_1"></div>
+          <div class="main_area_1" id="main_area_1"></div>
+          <div class='hand_1' id="hand_1"></div>
+          <div class="library_box_1">
+            <img src="img/cardback.jpg" alt="Library" id='library_1'>
+          </div>
+          <div class="graveyard_box_1"><p>Graveyard</p></div>
+          <div class="exile_box_1"></div>
         </div>
-        <div class="graveyard_box"></div>
-        <div class="exile_box"></div>
+
+        <div class="status_global_box"></div>
+
+        <div class='player_area_2' id='player_area_2'>
+          <div class="status_box_2"></div>
+          <div class="main_area_2" id="main_area_2"></div>
+          <div class="hand_2" id="hand_2"></div>
+          <div class="library_box_2">
+            <img src="img/cardback.jpg" alt="Library" id='library_2'>
+          </div>
+          <div class="graveyard_box_2"></div>
+          <div class="exile_box_2"></div>
+        </div>
       </div>
+
     </div>
   </body>
 </html>
