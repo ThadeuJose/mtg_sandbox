@@ -3,24 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>MTG Sandbox</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="decklist" id="decklistdown" hidden>
-        <textarea class='decklistDown' id="decklistDown" name="decklistDown" rows="20" cols="40"></textarea>
-        <button type="button" id='submitDecklistDown' name="submitDecklistDown">Submit</button>
-      </div>
 
-      <div class="grid_container">
+    <div class="decklist decklist__down" id="decklistdown">
+      <p>Decklist Player 2 Down</p>
+      <textarea class='decklist_down_textarea' id="decklist_player_2" name="decklist_down" rows="20" cols="40"></textarea>
+      <button type="button" class='decklist_down_button' id='submit_decklist_player_2' name="submit_decklist_player_2">Submit</button>
+    </div>
+
+    <div class="decklist" id="decklistup" hidden>
+      <p>Decklist Down</p>
+      <textarea class='decklistDown' id="decklist_down" name="decklistDown" rows="20" cols="40"></textarea>
+      <button type="button" id='submitDecklistDown' name="submitDecklistDown">Submit</button>
+    </div>
+
+    <div class="main">
+
+      <div class="grid_container player_area">
+
         <div class='player_area_1' id='player_area_1'>
           <div class="status_box_1"></div>
           <div class="main_area_1" id="main_area_1"></div>
           <div class='hand_1' id="hand_1"></div>
           <div class="library_box_1">
-            <img src="img/cardback.jpg" alt="Library" id='library_1'>
+            <img src="img/cardback.png" alt="Library" class='card' id='library_1'>
           </div>
           <div class="graveyard_box_1"><p>Graveyard</p></div>
           <div class="exile_box_1"></div>
@@ -33,7 +44,7 @@
           <div class="main_area_2" id="main_area_2"></div>
           <div class="hand_2" id="hand_2"></div>
           <div class="library_box_2">
-            <img src="img/cardback.jpg" alt="Library" id='library_2'>
+            <img src="img/cardback.png" alt="Library" class='card' id='library_2'>
           </div>
           <div class="graveyard_box_2"></div>
           <div class="exile_box_2"></div>
