@@ -25,12 +25,12 @@ body {
 .decklist {
   position: fixed;
   background-color: white;
-  height: 100vh;;
+  /* height: 100vh;; */
 }
 
 .decklist__down {
   right:0;
-  font-size: 2.7rem;
+  /* font-size: 2.7rem; */
 }
 
 .decklist_down_textarea {
@@ -45,9 +45,13 @@ body {
   font-size: inherit;
 }
 
-.card{
+.card {
   height:14rem;
   width: 10rem;
+}
+
+.card_box {
+  display: inline-block;
 }
 
 .player_area{
